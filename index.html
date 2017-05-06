@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Dales Game Pictures</title>
     <link href="materialize/css/materialize.css" rel="stylesheet" type="text/css">
+    <link href="background.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -19,19 +20,21 @@
       // Set to nth slide
       $('.carousel').carousel('set', 4);
     });
-
+    $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
   </script>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col s12 green darken-4">Dale's Game Camera</div>
+        <div class="col s12 green darken-4"><h1>Dale's Game Camera</h1></div>
       </div>
       <div class="carousel">
-        <a class="carousel-item" href="#one!"><img src="pictures/Cdy00317.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="pictures/Cdy00370.jpg"></a>
-        <a class="carousel-item" href="#three!"><img src="pictures/EK000663.JPG"></a>
-        <a class="carousel-item" href="#four!"><img src="pictures/EK000068.JPG"></a>
-        <a class="carousel-item" href="#five!"><img src="pictures/EK005151.JPG"></a>
+        <a class="carousel-item" href="#one!"><img class="materialboxed" width="250" src="pictures/Cdy00317.jpg"></a>
+        <a class="carousel-item" href="#two!"><img class="materialboxed" width="250" src="pictures/Cdy00370.jpg"></a>
+        <a class="carousel-item" href="#three!"><img class="materialboxed" width="250" src="pictures/EK000663.JPG"></a>
+        <a class="carousel-item" href="#four!"><img class="materialboxed" width="250" src="pictures/EK000068.JPG"></a>
+        <a class="carousel-item" href="#five!"><img class="materialboxed" width="250" src="pictures/EK005151.JPG"></a>
       </div>
       <div class="row">
 
