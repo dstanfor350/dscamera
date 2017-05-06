@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link href="hp-piano.css" rel="stylesheet" data-resizable="true">
+    <link href="hpsum.css" rel="stylesheet" data-resizable="true">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("img").mouseenter(function(e) {
+               $(this).css("opacity", 0.5);
+            }).mouseout(function(e) {
+               $(this).css("opacity", 1.0);
+            });
+        });
+    </script>
+</head>
+<body>
+  <div class="hp-master-details">
+  <div class="hp-master-pane">
+    <h1>D1000 Game Camera</h1>
+    <form method="post">
+        <div id="oblock">
+            <div class="dtable">
+                <div id="row1" class="drow">
+                    <div class="dcell">
+                        <img src="pictures/Venison-Burgers-150x150.jpg" height="100" width="100"/>
+                    </div>
+                    <div class="dcell">
+                        <img src="pictures/1416_Quantum_Timer.jpg" height="150" width="150"/>
+                    </div>
+                    <div class="dcell">
+                        <img src="pictures/arctic-ocean-seafloor-map.jpg" height="150" width="150"/>
+                    </div>
+                </div>
+                <div id="row2" class="drow">
+                    <div class="dcell">
+                        <img src="peony.png"/>
+                    </div>
+                    <div class="dcell">
+                        <img src="primula.png"/>
+                    </div>
+                    <div class="dcell">
+                        <img src="snowdrop.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="buttonDiv"><button type="submit">Place Order</button></div>
+    </form>
+	</div>
+  </div>
+</body>
+</html>
