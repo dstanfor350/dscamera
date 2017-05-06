@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link href="hp-piano.css" rel="stylesheet" data-resizable="true">
+    <link href="hpsum.css" rel="stylesheet" data-resizable="true">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("img").mouseenter(function(e) {
+               $(this).css("opacity", 0.5);
+            }).mouseout(function(e) {
+               $(this).css("opacity", 1.0);
+            });
+        });
+    </script>
+</head>
+<body>
+  <div class="hp-master-details">
+  <div class="hp-master-pane">
+    <h1>D1000 Game Camera</h1>
+	<div id="main">
+		<form method="post">
+			<div id="bigpic" style="float:right">
+				<img src="pictures/Cdy00317.jpg" height="500" width="500"/>
+			</div>
+			<div id="oblock">
+				<div class="dtable">
+					<div id="row1" class="drow">
+						<div class="dcell">
+							<img src="pictures/Cdy00317.jpg" height="100" width="100"/>
+						</div>
+						<div class="dcell">
+							<img src="pictures/Cdy00370.jpg" height="100" width="100"/>
+						</div>
+						 <div class="dcell">
+							<img src="pictures/EK000663.JPG" height="100" width="100"/>
+						</div>
+						<div class="dcell">
+							<img src="pictures/EK000068.JPG" height="100" width="100"/>
+						</div>
+						<div class="dcell">
+							<img src="pictures/EK005151.JPG" height="100" width="100"/>
+						</div>
+						<div class="dcell">
+							<img src="pictures/EK000783.JPG" height="100" width="100"/>
+						</div>
+						<div class="dcell">
+							<img src="pictures/EK005151.JPG" height="100" width="100"/>
+						</div>
+						<div class="dcell">
+							<img src="pictures/EK004200.JPG" height="100" width="100"/>
+						</div>
+						<div class="dcell">
+							<img src="pictures/1416_Quantum_Timer.jpg" height="100" width="100"/>
+						</div>
+				   </div>
+					<div id="row2" class="drow">
+						<div class="dcell">
+							<img src="pictures/EK004142.JPG" height="100" width="100"/>
+						</div>
+						<div class="dcell">
+							<img src="pictures/EK005110.JPG" height="100" width="100"/>
+						</div>
+						<div class="dcell">
+							<img src="pictures/EK006091.JPG" height="100" width="100"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="buttonDiv"><button type="submit">Place Order</button></div>
+		</form>
+	</div>
+	</div>
+  </div>
+</body>
+</html>
