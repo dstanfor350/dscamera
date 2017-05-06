@@ -4,8 +4,9 @@
     <title>Example</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <link href="hp-piano.css" rel="stylesheet" data-resizable="true">
-    <link href="hpsum.css" rel="stylesheet" data-resizable="true">
+<!--     <link href="hp-piano.css" rel="stylesheet" data-resizable="true"> -->
+<!--    <link href="hpsum.css" rel="stylesheet" data-resizable="true"> -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript">
         $(document).ready(function () {
             $("img").mouseenter(function(e) {
@@ -13,7 +14,11 @@
             }).mouseout(function(e) {
                $(this).css("opacity", 1.0);
             });
+			$("img").click(function(e) {
+				$("#bigpic").html("<img src="+this.src+" width='500' height='500'>");
+			});
         });
+
     </script>
 </head>
 <body>
@@ -25,7 +30,13 @@
 			<div id="bigpic" style="float:right">
 				<img src="pictures/Cdy00317.jpg" height="500" width="500"/>
 			</div>
-			<div id="oblock">
+<!--			
+				<div class="row">
+				  <div class="col-md-1 dcell"><img src="pictures/Cdy00317.jpg" height="100" width="100"/></div>
+				  <div class="col-md-1 dcell"><img src="pictures/Cdy00370.jpg" height="100" width="100"/></div>
+				</div>	
+-->				
+				<div id="oblock">
 				<div class="dtable">
 					<div id="row1" class="drow">
 						<div class="dcell">
@@ -69,7 +80,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="buttonDiv"><button type="submit">Place Order</button></div>
+<!--			<div id="buttonDiv"><button type="submit">Place Order</button></div> -->
 		</form>
 	</div>
 	</div>
